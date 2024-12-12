@@ -7,11 +7,22 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
+    const n = Number(prompt(`Insira um número:`))
+    const potencia = Number(prompt(`Insira a potência que você deseja elevar este número:`))
+    let npotencia = n
 
     //Processamento
+   if (potencia=== 0){
+    document.write(`1   `)
+   } else{
+    for ( let i = 1; i <= potencia; i++){
+        npotencia = n ** potencia
+    }
+    document.write(`${npotencia}`)
+   }
 
 
     //Saída
+   
 
 </script>

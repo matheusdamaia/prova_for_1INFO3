@@ -7,11 +7,21 @@
     //AQUI, USE FOR...OF!
     
     //Entrada
+    let lista = [1, 2, 3, 4, 5, 1, 4, 7, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5];
+    let listaSemRepetida = []
 
 
     //Processamento
-
-
+    for ( numero of lista){
+     if ( !listaSemRepetida.includes(numero)){
+        listaSemRepetida.push(numero)
+     }
+    }
+    listaSemRepetida.sort(function(a,b){
+        return a-b
+    })
     //Saída
+    document.write(`${listaSemRepetida}`)
+    
 
 </script>
